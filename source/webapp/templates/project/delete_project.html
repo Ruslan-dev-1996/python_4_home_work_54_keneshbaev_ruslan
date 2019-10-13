@@ -1,10 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}Delete Status{% endblock %}
+
+{% block menu %}
+    <li><a href="{% url 'project_view' %}">Project</a></li>
+{% endblock %}
+
+{% block content %}
+    <h1>Are you sure you want to delete "{{ project }}"?</h1>
+    <form method="POST" action="{% url 'project_delete' project.pk %}" class="text-center">
+        {% csrf_token %}
+        <p><input type="submit" value="Confirm"></p>
+        <p><a href="{% url 'project_view' %}">Cancel</a></p>
+    </form>
+{% endblock %}
