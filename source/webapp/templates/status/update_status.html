@@ -3,12 +3,12 @@
 {% block title %}Refresh Status{% endblock %}
 
 {% block menu %}
-    <li><a href="{% url 'status_view'  %}">Status</a></li>
+    <li><a href="{% url 'status_view'  %}">Статус</a></li>
 {% endblock %}
 
 {% block content %}
-    <h1>Refresh</h1>
+    <h1>Обновить</h1>
     <form method="POST" action="{% url 'status_update' status.pk %}">
-        {% include 'partial/tracker_form.html' with button_text="Update" %}
+        {% include 'partial/tracker_form.html' with button_text="Редактировать" %}
     </form>
 {% endblock %}

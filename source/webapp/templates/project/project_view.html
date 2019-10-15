@@ -3,17 +3,22 @@
 {% block title %}Status{% endblock %}
 
 {% block menu %}
-    <li><a href="{% url 'project_add' %}">Add Project</a></li>
+    <li><a href="{% url 'project_add' %}">Добавить Проект</a></li>
+    <div class="search ">
+      {% include 'partial/simple_search.html' %}
+    </div>
 {% endblock %}
 
 {% block content %}
-    <h1>Status:</h1>
+
+    <h1 >Проект</h1>
     <hr/>
     {% for project in projects %}
-        <h2>{{ project.name }}</h2>
-        <li><a href="{% url 'project_delete' project.pk %}">Delete</a></li>
-        <li><a href="{% url 'project_update' project.pk %}">Refresh</a></li>
-          <li><a href="{% url 'detail_view' project.pk %}">more</a></li>
+        <a href="{% url 'detail_view' project.pk %}"><h2 class="card-text ">{{ project.name }}</h2></a>
+
+        <li><a href="{% url 'project_delete' project.pk %}" class="myButton">Удалить</a></li>
+        <li><a href="{% url 'project_update' project.pk %}" class="myButtons">Редактор</a></li>
+
 
         <hr/>
     {% endfor %}

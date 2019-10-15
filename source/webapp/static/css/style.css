@@ -1,5 +1,5 @@
 body {
-    background: lightcyan;
+    /*background: #fbfff6;*/
     color: #222222;
     font-family: Arial, sans-serif;
     margin-top: 60px;
@@ -17,7 +17,7 @@ h1 {
 
 .navbar {
     display: block;
-    background: #6a7dff;
+    background-color: #775ba3;
     position: fixed;
     top: 0;
     right: 0;
@@ -56,9 +56,6 @@ h1 {
     white-space: pre-wrap;
 }
 
-.text-center {
-    text-align: center;
-}
 
 .form-error {
     color: red;
@@ -95,4 +92,123 @@ h1 {
 .pagination .page-disabled {
    background: #6a7dcc;
    color: #dddddd
+}
+
+.board{
+   text-align: center;
+}
+.card-body{
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn-secondary{
+    padding: .375rem 1.76rem;
+}
+
+
+.myButton {
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.myButtons {
+	box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius: 50px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:12px 37px;
+	text-decoration:none;
+    margin-top: 10px;
+	text-shadow:0px 1px 0px #283966;
+}
+.myButtons:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+}
+.myButtons:active {
+	position:relative;
+	top:1px;
+}
+.card-text {
+    padding: 10px 5px;
+    margin-left: 30px;
+}
+.card-type{
+    padding: 10px 20px;
+}
+.card-status{
+     padding: 10px 20px;
+}
+.form-inline .form-control {
+    margin-left: 400px;
+}
+
+a.button30 {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  width: 1.3em;
+  height: 1.3em;
+  line-height: 1.3em;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px rgba(255,255,255,.3);
+  font-size: 300%;
+  font-weight: 900;
+  color: #000;
+  border-radius: 100%;
+  background: rgb(144,142,105) linear-gradient(rgb(185,181,151), rgb(144,142,105));
+  box-shadow:
+   inset 0 -2px 1px rgba(0,0,0,.5),
+   inset 0 2px 1px rgba(255,255,255,.9),
+   0 4px 4px rgba(0,0,0,.9);
+}
+a.button30:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 12%;
+  left: 12%;
+  right: 12%;
+  bottom: 12%;
+  border-radius: 100%;
+  background: rgba(242, 203, 20, 0) linear-gradient(rgb(40, 242, 236), rgb(80, 255, 178));
+  box-shadow:
+   inset 0 2px 1px rgba(0,0,0,.5),
+   inset 0 -2px 1px rgba(255,255,255,.3);
+}
+.search{
+    margin-left: 800px;
+
 }

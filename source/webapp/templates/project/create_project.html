@@ -3,12 +3,12 @@
 {% block title %}Create project{% endblock %}
 
 {% block menu %}
-    <li><a href="{% url 'project_view'  %}">Project</a></li>
+    <li><a href="{% url 'project_view'  %}">Проект</a></li>
 {% endblock %}
 
 {% block content %}
-    <h1>Create Project</h1>
+    <h1>Добавить Проект</h1>
     <form method="POST" action="{% url 'project_add' %}">
-        {% include 'partial/tracker_form.html' with button_text="Create" %}
+        {% include 'partial/tracker_form.html' with button_text="Добавить" %}
     </form>
 {% endblock %}

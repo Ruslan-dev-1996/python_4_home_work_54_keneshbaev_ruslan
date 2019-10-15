@@ -7,8 +7,8 @@
 {% endblock %}
 
 {% block content %}
-    <h1>Create Type</h1>
+    <h1>Добавить Тип</h1>
     <form method="POST" action="{% url 'type_add' %}">
-        {% include 'partial/tracker_form.html' with button_text="Create" %}
+        {% include 'partial/tracker_form.html' with button_text="Добавить" %}
     </form>
 {% endblock %}
